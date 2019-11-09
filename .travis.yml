@@ -107,4 +107,4 @@ script:
   # Execute the unit tests
   - ./bin/phpunit --testsuite unit
   # Execute the Behat tests
-  - ./bin/behat --tags="${BEHAT_SKIP_TAGS}" ${BEHAT_EXTRA_OPTIONS}
+  - ./bin/behat -f progress --tags="${BEHAT_SKIP_TAGS}" ${BEHAT_EXTRA_OPTIONS}
